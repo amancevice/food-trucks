@@ -1,0 +1,146 @@
+<head>
+  <title>Boston Food Trucks</title>
+  <link rel='shortcut icon' href='/images/favicon.ico?'></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script type='text/javascript' src='http://maps.googleapis.com/maps/api/js?key=AIzaSyB_C2xhecrVzWQtHRJqcfpRbIW8zLHGw_M&sensor=true'></script>
+  <script type='text/javascript' src='http://code.google.com/p/google-maps-extensions/source/browse/google.maps.Polygon.getBounds.js'></script>
+  <script type='text/javascript' src='scripts/maps.google.polygon.containsLatLng.js'></script>
+  <script type='text/javascript' src='scripts/cookies.js'></script>
+  <script type='text/javascript' src='scripts/neighborhoods.js'></script>
+  <script type='text/javascript'>
+    $(document).ready(function() {
+      $('#days').hide();
+      $('#meals').hide();
+      $('#neighborhoods').hide();
+      $('#aboutcontents').hide();
+    });
+  </script>
+  <script>
+    function hideAddressBar(){
+      if(!window.location.hash){
+        if(document.height < window.outerHeight){
+          document.body.style.height = (window.outerHeight + 50) + 'px';
+        }
+        setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+      }
+    }
+    window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
+    window.addEventListener("orientationchange", hideAddressBar );
+  </script>
+</head>
+
+<body>
+  {{> dayfilters}}
+  {{> mealfilters}}
+  {{> neighborhoodfilters}}
+  <div id='main'>
+    {{> filters}}
+    {{> trucks}}
+    <div id='footer'>
+      {{> about}}
+    </div>
+    <div id='play'>
+      <a href="https://play.google.com/store/apps/details?id=com.smallweirdnumber.bft">
+        <img alt="Get it on Google Play"
+             src="http://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+      </a>
+    </div>
+  </div>
+  {{> aboutcontents}}
+</body>
+
+<template name='filters'>
+  <div class="filters">
+    {{> dayfilter}}
+    {{> mealfilter}}
+    {{> neighborhoodfilter}}
+  </div>
+</template>
+
+<template name='dayfilter'>
+  <div id='day' class='filter {{filtered}}'>{{value}}</div>
+</template>
+<template name='mealfilter'>
+  <div id='meal' class='filter {{filtered}}'>{{value}}</div>
+</template>
+<template name='neighborhoodfilter'>
+  <div id='neighborhood' class='filter {{filtered}}'>{{value}}</div>
+</template>
+
+
+<template name='dayfilters'>
+  <div id='days' class='filterlist'>
+  {{#each values}}
+    <div class='item {{selected}}'>{{name}}</div>
+  {{/each}}
+  </div>
+</template>
+
+<template name='mealfilters'>
+  <div id='meals' class='filterlist'>
+  {{#each values}}
+    <div class='item {{selected}}'>{{name}}</div>
+  {{/each}}
+  </div>
+</template>
+
+<template name='neighborhoodfilters'>
+  <div id='neighborhoods' class='filterlist'>
+  {{#each values}}
+    <div class='item {{selected}}'>{{name}}</div>
+  {{/each}}
+  </div>
+</template>
+
+<template name='trucks'>
+  <div class='trucks'>
+    {{#each trucks}}
+      {{> truck}}
+    {{/each}}
+  </div>
+</template>
+
+<template name='truck'>
+  <div class='truck {{selected}}'>{{name}}</div>
+  <div class='details {{selected}}'>
+    {{#if has_site}}
+      <a class='trucksite' href='//{{site}}'>{{short_site}}</a>
+    {{/if}}
+    {{#each squares}}
+      <div class='square'>
+        {{breadcrumb}}
+        <a href='http://maps.google.com/maps?z=40&q=@{{lat}},{{lon}}' target="_blank">{{square}}</a>
+      </div>
+    {{/each}}
+  </div>
+</template>
+
+<template name='about'>
+  <div id='about' class=''>About</div>
+</template>
+
+<template name='aboutcontents'>
+  <div id='aboutcontents' class='filterlist'>
+    <div class='item selected'>Boston Food Trucks</div>
+    <div id='aboutbody' class='body'>
+      This application was written using
+      <span><a class='highlighted' href='//meteor.com'>Meteor</a></span><br/>
+      The food truck schedule data was provided by
+      <span><a class='highlighted' href='//streetfoodapp.com/api'>Street Food</a></span>
+      and the
+      <span><a class='highlighted' href='//www.cityofboston.gov/foodtrucks/schedule-app-min.asp'>City of Boston</a></span><br/>
+      Locations were mapped to neighborhoods using
+      <span><a class='highlighted' href='//bostonneighborhoodmap.com/'>Boston Neighborhood Map</a></span>
+      and a
+      <span><a class='highlighted' href='//github.com/tparkin/Google-Maps-Point-in-Polygon'>Point in Polygon</a></span>
+      extension for the Google Maps API v3.
+      <br/><br/>
+      email questions and comments to
+      <a class='highlighted' href='mailto:smallweirdnum@gmail.com'>smallweirdnum@gmail.com</a>
+    </div>
+  </div>
+</template>
