@@ -1,0 +1,134 @@
+require 'bundler/setup'
+Bundler.require
+Geocoder::Railtie.insert
+
+require './lib/city_config'
+require './lib/day'
+require './lib/firebase'
+require './lib/like'
+require './lib/locatable'
+require './lib/meal'
+require './models/city'
+require './models/gig'
+require './models/neighborhood'
+require './models/place'
+require './models/provider'
+require './models/truck'
+
+namespace :db do
+  desc 'Remove Unknown places with no Gigs'
+  task :prune do
+    Place.unknown.inactive.each do |place|
+      puts "Destroying Place #{place.name}"
+      place.destroy
+    end
+
+    Truck.inactive.each do |truck|
+      puts "Destroying Truck #{truck.name}"
+      truck.destroy
+    end
+  end
+
+  desc 'Update city schedule'
+  task :update do
+    City.all.collect &:update
+  end
+
+  desc 'Sync with Firebase'
+  task :sync do
+    Firebase.ref(:v3_0).set City.all.collect(&:syncdata).reduce(:merge)
+  end
+
+  desc 'Sync deprecated data with Firebase'
+  task :syncdep do
+    City.all.collect &:sync_deprecated
+  end
+end
+
+namespace :places do
+  #def list relation
+
+  desc 'List Unknown locations'
+  task :unknown do
+    headings = %w(City Neighborhood Provider Name LatLng)
+    rows     = Place.unknown.map do |x|
+      neighborhood = x.neighborhood && x.neighborhood.name
+      latlng       = x.latitude && x.longitude && "#{x.latitude.to_s[0..10]},#{x.longitude.to_s[0..10]}"
+
+      [ x.city.name, neighborhood, x.provider.type, x.name, latlng ]
+    end.sort{|a,b| a.to_s<=>b.to_s }
+
+    puts Terminal::Table.new headings:headings, rows:rows if rows.any?
+  end
+end
+
+namespace :mongo do
+  desc 'Refresh MongoDB'
+  task :update do
+    require 'mongo'
+    require 'uri'
+
+    include Mongo
+
+    # Connection details
+    uri  = URI.parse ENV['MONGOHQ_URL']||''
+    host = uri.host||'localhost'
+    port = uri.port||MongoClient::DEFAULT_PORT
+    dbn  = uri.path.empty? ? 'development' : uri.path.gsub(/^\//, '')
+    user = uri.user
+    pass = uri.password
+
+    # Connect to MongoDB and flush collection
+    connection = Mongo::Connection.new(host, port).db dbn
+    connection.authenticate user, pass unless user.nil? || pass.nil?
+
+    # Cities
+    coll = connection.collection('cities')
+    coll.remove
+    cities = City.all.map{|x| {'name' => x.name} }
+    coll.insert cities
+
+    # Neighborhoods
+    coll = connection.collection('neighborhoods')
+    coll.remove
+    neighborhoods = Neighborhood.all.map{|x| {'city' => x.city.name, 'name' => x.name} }
+    coll.insert neighborhoods
+
+    # Trucks
+    coll = connection.collection('trucks')
+    coll.remove
+    trucks = Truck.all.map do |x|
+      { 'city' => x.city.name,
+        'name' => x.name,
+        'site' => x.site.nil? ? nil : x.site.sub(/\Ahttps?:\/\//,'') }
+    end
+    coll.insert trucks
+
+    # Locations
+    coll = connection.collection('locations')
+    coll.remove
+    locations = Gig.all.map do |x|
+      x.meals.map do |meal|
+        meal = meal.to_s.split(/_/).map(&:capitalize).join(' ')
+        neighborhood = (x.place.neighborhood && x.place.neighborhood.name) || 'Other'
+        { 'mongoid'       => x.uuid,
+          'name'          => x.truck.name,
+          'site'          => x.truck.site,
+          'day'           => x.weekday.capitalize.to_s,
+          'meal'          => meal,
+          'neighborhood'  => neighborhood,
+          'square'        => x.place.name,
+          'lat'           => x.place.latitude,
+          'lon'           => x.place.longitude,
+          'source'        => x.provider.type,
+          'created_at'    => Time.now.utc.to_s,
+          'updated_at'    => Time.now.utc.to_s,
+          'last_seen'     => Time.now.utc.to_s,
+          'last_modified' => Time.now.utc.to_s,
+          'deprecated'    => false,
+          'city'          => x.city.name }
+      end
+    end.flatten
+    coll.insert locations
+  end
+end

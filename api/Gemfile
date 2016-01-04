@@ -1,0 +1,25 @@
+ruby '2.2.3'
+source 'https://rubygems.org'
+
+gem 'activerecord',         '~>4.2'
+gem 'bson_ext',             '~>1.8'
+gem 'bigbertha',            '~>0.0', require: ['bigbertha', 'firebase_token_generator']
+gem 'border_patrol',        '~>0.2'
+gem 'chronic',              '~>0.10'
+gem 'geocoder',             '~>1.2', require: ['geocoder/railtie', 'geocoder']
+gem 'mongo',                '~>1.8'
+gem 'oga',                  '~>1.2'
+gem 'rake',                 '~>10.1'
+gem 'redis-sinatra',        '~>1.4'
+gem 'sinatra',              '~>1.4'
+gem 'sinatra-activerecord', '~>2.0', require: ['sinatra/activerecord', 'sinatra/activerecord/rake']
+gem 'terminal-table'
+
+group :development do
+  gem 'pry'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end

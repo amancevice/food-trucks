@@ -1,0 +1,18 @@
+Dog House:
+    patterns:
+        - !ruby/regexp /The Dog House/i
+J Brûlée:
+    patterns:
+        - !ruby/regexp /J Brulee/i
+K & J:
+    patterns:
+        - !ruby/regexp /K & J Food Truck/i
+Local Omnivore:
+    patterns:
+        - !ruby/regexp /The Local Omnivore/i
+Taters:
+    patterns:
+        - !ruby/regexp /Taters - The Baked Potato Co./i
+Yolk's Breakfast:
+    patterns:
+        - !ruby/regexp /Yolk's Breakfast Street Meet Truck/i

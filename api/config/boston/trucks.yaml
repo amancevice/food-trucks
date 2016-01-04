@@ -1,0 +1,52 @@
+--- # trucks.yaml
+Biryani Park:
+    site: snsmarketinc.com
+    patterns:
+        - !ruby/regexp /SNS BiryaniPark/
+Bon Me:
+    patterns:
+        - !ruby/regexp /Bon Me/
+Bone Daddy's Burgers:
+    patterns:
+        - !ruby/regexp /Bone Daddy Burgers/
+        - !ruby/regexp /Daddy's Bonetown Burgers/
+Chicken & Rice Guys:
+    site: cnrguys.com
+    patterns:
+        - !ruby/regexp /Chicken and Rice Guys/
+Clover:
+    patterns:
+        - !ruby/regexp /Clover/
+Compliments Food Truck:
+    patterns:
+        - !ruby/regexp /Compliments/
+El Diez Argentinian Grill:
+    patterns:
+        - !ruby/regexp /El Diez Argentenian Grill/
+Evan's NY Style Deli:
+    patterns:
+        - !ruby/regexp /Evan'?s .*? Deli/
+Fugu Truck:
+    patterns:
+        - !ruby/regexp /Fugu Foods/
+Lilian's Smokin' Rack Barbecue:
+    patterns:
+        - !ruby/regexp /Lilian's Smokin' Rack BBQ/
+Momogoose:
+    patterns:
+        - !ruby/regexp /Momogoose/
+Papi's Stuffed Sopapillas:
+    site: stuffedbypapi.com
+    patterns:
+        - !ruby/regexp /Papi's Stuffed Sopapillias/
+Rami's: ~
+Redbones Barbecue:
+    patterns:
+        - !ruby/regexp /Redbones Barbeque/
+Roxy's Grilled Cheese:
+    patterns:
+        - !ruby/regexp /Roxy's Gourmet Grilled Cheese/
+Savory Food Truck: ~
+Wow Barbecue:
+    patterns:
+        - !ruby/regexp /Wow Barbeque/

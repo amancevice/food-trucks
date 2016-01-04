@@ -1,0 +1,559 @@
+--- # Boston Neighborhoods
+Allston-Brighton:
+    1550 Soldiers Field Rd:
+        type     : Address
+        latlon   : "42.359921,-71.149558"
+        number   : 1550
+        street   : Soldiers Field
+        patterns :
+            - !ruby/regexp /1550 Soldier'?s'? Field/i
+    Commonwealth Ave & St Marys St:
+        type     : Intersection
+        latlon   : "42.349696,-71.106702"
+        main     : Commonwealth
+        cross    : St Marys
+        patterns :
+            - !ruby/regexp /Mary's/i
+    Cleveland Circle:
+        type     : Landmark
+        latlon   : "42.33598,-71.15155"
+        patterns : ~
+    Boston University Bridge:
+        type     : Landmark
+        latlon   : "42.350969,-71.11272099999999"
+        patterns :
+            - !ruby/regexp /BU Bridge/i
+    Boston University West:
+        type     : Landmark
+        latlon   : "42.350933,-71.112689"
+        patterns :
+            - !ruby/regexp /B\.?U\.? West/i
+            - !ruby/regexp /855 Commonwealth/i
+    Boston University Central:
+        type     : Landmark
+        latlon   : "42.350301,-71.105982"
+        patterns :
+            - !ruby/regexp /BU\/brookline/i
+    Boston University East:
+        type     : Landmark
+        latlon   : "42.34922,-71.101553"
+        patterns :
+            - !ruby/regexp /B\.?U\.? East/i
+            - !ruby/regexp /Boston University at Morse Auditorium on Commonwealth Ave/i
+            - !ruby/regexp /Commonwealth .*? Silber/i
+    Commonwealth Ave & Pleasant St:
+        type     : Intersection
+        latlon   : "42.3515115,-71.1182622"
+        main     : Commonwealth
+        cross    : Pleasant
+Back Bay:
+    Boston Public Library:
+        type     : Landmark
+        latlon   : "42.349696,-71.078614"
+        patterns :
+            - !ruby/regexp /Copley Square West/i
+            - !ruby/regexp /Boylston St @ BPL/i
+            - !ruby/regexp /Boston Pulbic Library/i
+            - !ruby/regexp /Boston Library/i
+    Clarendon St & Public Alley 439:
+        type     : Intersection
+        latlon   : "42.35109708,-71.07542524"
+        main     : Clarendon
+        cross    : Public Alley 439
+        patterns :
+            - !ruby/regexp /\AClarendon Street\z/i
+    Clarendon St & Newbury St:
+        type     : Intersection
+        latlon   : "42.3499676,-71.07483057"
+        main     : Clarendon
+        cross    : Newbury
+        patterns :
+            - !ruby/regexp /Clarendon.*?H&M/i
+            - !ruby/regexp /Claredon.*?H&M/i
+    Clarendon St & Boylston St:
+        type     : Intersection
+        latlon   : "42.351002,-71.075451"
+        main     : Clarendon
+        cross    : Boylston
+        patterns :
+            - !ruby/regexp /Copley Square North/i
+            - !ruby/regexp /220 Clarendon/i
+            - !ruby/regexp /Clarendon .*? Copley/i
+            - !ruby/regexp /Clarendon\/Boylston/i
+            - !ruby/regexp /Clarendon St [A-Za-z]+ Trinity Church/i
+    Stuart St & Trinity Pl:
+        type     : Intersection
+        latlon   : "42.348506,-71.07558899999999"
+        main     : Stuart
+        cross    : Trinity
+        patterns :
+            - !ruby/regexp /Copley Square South/i
+            - !ruby/regexp /Back Bay .*? Stuart/i
+            - !ruby/regexp /Trinity Place/i
+    Stuart St & Dartmouth St:
+        type     : Intersection
+        latlon   : "42.3483035,-71.0764342"
+        main     : Stuart
+        cross    : Dartmouth
+        patterns :
+            - !ruby/regexp /Stuart .*? Dartmouth/i
+    Stuart St & Berkeley St:
+        type     : Intersection
+        latlon   : "42.34954189,-71.07221108"
+        main     : Stuart
+        cross    : Berkeley
+        patterns :
+            - !ruby/regexp /Stuart .*? Berkeley/i
+            - !ruby/regexp /Berkeley .*? Stuart/i
+    Huntington Ave & Belvidere St:
+        type     : Intersection
+        latlon   : "42.345558,-71.082319"
+        main     : Huntington
+        cross    : Belvidere
+        patterns :
+            - !ruby/regexp /Prudential .*? Belvidere/i
+            - !ruby/regexp /Belvedere/i
+            - !ruby/regexp /Belvidere .*? Prudential/i
+            - !ruby/regexp /Belvidere/i
+    Prudential Center Plaza:
+        type     : Landmark
+        latlon   : "42.345644,-71.08250269"
+        patterns :
+        - !ruby/regexp /Christian Science .*? Fountain/i
+Bay Village: {}
+Beacon Hill: {}
+Brookline:
+    Beacon St & Englewood Ave:
+        type     : Intersection
+        latlon   : "42.3370071,-71.1450084"
+        main     : Beacon
+        cross    : Englewood
+        patterns : ~
+    Brookline Village:
+        type     : Landmark
+        latlon   : "42.33226817,-71.11594028"
+        patterns : ~
+    Brookline High School:
+        type     : Landmark
+        latlon   : "42.33261134,-71.1284861"
+        patterns : ~
+Burlington:
+    99 South Bedford St:
+        type     : Address
+        latlon   : "42.48339943,-71.19388278"
+        number   : 99
+        street   : South Bedford
+        patterns :
+            - !ruby/regexp /99 S(outh)?\.? Bedford/i
+Cambridge:
+    36 Cambridge Park Drive:
+        type     : Address
+        latlon   : "42.39443623,-71.14547464"
+        number   : 36
+        street   : Cambridge Park
+        patterns :
+            - !ruby/regexp /36 Cambridgepark/i
+    87 Cambridge Park Drive:
+        type     : Address
+        latlon   : "42.39523347,-71.14324302"
+        number   : 87
+        street   : Cambridge Park
+        patterns : ~
+    Alewife:
+        type     : Landmark
+        latlon   : "42.39395409,-71.14360297"
+        patterns : ~
+    Harvard University:
+        type     : Landmark
+        latlon   : "42.37559323,-71.11642358"
+        patterns :
+            - !ruby/regexp /Oxford.*?Kirkland/i
+            - !ruby/regexp /Harvard Yard/i
+    Kendall Square:
+        type     : Landmark
+        latlon   : "42.3628741,-71.0900971"
+        patterns :
+            - !ruby/regexp /Kendall/i
+    Cambridge Winter Farmers Market:
+        type     : Event
+        latlon   : "42.36551861,-71.1111432"
+        patterns :
+            - !ruby/regexp /Cambrige Winter Farmers Market/i
+    Discovery Park:
+        type     : Landmark
+        latlon   : "42.39860522,-71.14913503"
+        patterns : ~
+    Greenway Open Market:
+        type     : Event
+        latlon   : "42.37682631,-71.11769692999999"
+        patterns : ~
+Charlestown:
+    Navy Yard:
+        type     : Landmark
+        latlon   : "42.374417,-71.05501099999999"
+        patterns : ~
+Chestnut Hill:
+    Cassidy Park:
+        type     : Landmark
+        latlon   : "42.33598377,-71.15156598999999"
+        patterns : ~
+Chinatown:
+    Boylston St & Washington St:
+        type     : Intersection
+        latlon   : "42.35235,-71.06281"
+        main     : Boylston
+        cross    : Washington
+        patterns : ~
+    Chinatown Gate:
+        type     : Landmark
+        latlon   : "42.35107615,-71.059625"
+        patterns :
+            - !ruby/regexp /Chinatown Park/i
+            - !ruby/regexp /China Town Gate/i
+            - !ruby/regexp /Beach Street/i
+Dorchester:
+    Ashmont Station:
+        type     : Landmark
+        latlon   : "42.284652,-71.064489"
+        patterns :
+            - !ruby/regexp /Ashmont T?/i
+Downtown:
+    City Hall Plaza:
+        type     : Landmark
+        latlon   : "42.359747,-71.057401"
+        patterns :
+            - !ruby/regexp /City Hall/i
+            - !ruby/regexp /City Sq(are)?/i
+    Long Wharf:
+        type     : Landmark
+        latlon   : "42.3587087,-71.0521236"
+        patterns :
+            - !ruby/regexp /Aquarium/i
+            - !ruby/regexp /Milk .*?Greenway/i
+            - !ruby/regexp /Milk .*?Atlantic/i
+            - !ruby/regexp /Greenway .*?Milk/i
+            - !ruby/regexp /Atlantic .*?Milk/i
+            - !ruby/regexp /Rings Fountain/i
+            - !ruby/regexp /Greenway .*?State/i
+    Rowes Wharf:
+        type     : Landmark
+        latlon   : "42.356691,-71.051099"
+        patterns :
+            - !ruby/regexp /Rhowe'?s Wh?arf/i
+            - !ruby/regexp /Rowe'?s Wh?arf/i
+            - !ruby/regexp /High .*?Greenway/i
+            - !ruby/regexp /Greenway .*?High/i
+            - !ruby/regexp /Atlantic .*?High/i
+            - !ruby/regexp /Kennedy .*?High/i
+            - !ruby/regexp /High .*?Kennedy/i
+            - !ruby/regexp /High .*?Greenway/i
+            - !ruby/regexp /Greenway .*?High/i
+    Dewey Square:
+        type     : Landmark
+        latlon   : "42.35294674,-71.05603153"
+        patterns :
+            - !ruby/regexp /Dewey/i
+    Milk St & Kilby St:
+        type     : Intersection
+        latlon   : "42.35756,-71.05511"
+        main     : Milk
+        cross    : Kilby
+        patterns : ~
+    Park Street Station:
+        type     : Landmark
+        latlon   : "42.3564234,-71.0618815"
+        patterns :
+            - !ruby/regexp /Park St(reet)?/i
+            - !ruby/regexp /Brewer Fountain/i
+    Pearl St & Franklin St:
+        type     : Intersection
+        latlon   : "42.35609,-71.05489"
+        main     : Pearl
+        cross    : Franklin
+        patterns : ~
+    Rose Kennedy Greenway @ Congress St:
+        type     : Landmark
+        latlon   : "42.353916,-71.0539043"
+        patterns :
+            - !ruby/regexp /Kennedy .*?Congress/i
+            - !ruby/regexp /Congress .*?Kennedy/i
+            - !ruby/regexp /Congress .*?Greenway/i
+            - !ruby/regexp /Greenway .*?Congress/i
+    Rose Kennedy Greenway @ Oliver St:
+        type     : Landmark
+        latlon   : "42.3544698,-71.0525624"
+        patterns :
+            - !ruby/regexp /Greenway, Echelman Sculpture at Oliver St/i
+            - !ruby/regexp /Greenway, Fort Point Park/i
+East Boston:
+    Maverick Square:
+        type     : Landmark
+        latlon   : "42.3689227,-71.0398415"
+        patterns :
+            - !ruby/regexp /Maverick Sq(uare)?/i
+Everett:
+    Excel Academy:
+        type     : Landmark
+        latlon   : "42.38459524,-70.99852797"
+        patterns :
+            - !ruby/regexp /135 Santilli Hway Everett/i
+    Night Shift Brewery:
+        type    : Landmark
+        latlon   : "42.40579475,-71.06716004"
+Fenway-Kenmore:
+    Huntington Ave & Opera Pl:
+        type     : Intersection
+        latlon   : "42.340307,-71.088967"
+        main     : Huntington
+        cross    : Opera
+        patterns :
+            - !ruby/regexp /Northeastern .*?Opera/i
+            - !ruby/regexp /Opera .*?Northeastern/i
+    Northeastern University:
+        type     : Landmark
+        latlon   : "42.339807,-71.089172"
+        patterns :
+            - !ruby/regexp /716 Columbus Ave/i
+Framingham:
+    Framingham Centre Common:
+        type     : Landmark
+        latlon   : "42.30257075,-71.43472128000001"
+        patterns : ~
+Jamaica Plain:
+    Loring Geenough House:
+        type     : Landmark
+        latlon   : "42.37682631,-71.11769692999999"
+        patterns :
+            - !ruby/regexp /12 South St/i
+            - !ruby/regexp /Loring-Greenough/i
+    Egleston Farmers Market:
+        type     : Event
+        latlon   : "42.313539,-71.103587"
+        patterns :
+            - !ruby/regexp /Egleston Farmer'?s Market/i
+    Arnold Arboretum:
+        type     : Landmark
+        latlon   : "42.30826372,-71.11998283"
+        patterns : ~
+Hyde Park: {}
+Lexington:
+    Hartwell Ave:
+        type     : Landmark
+        latlon   : "42.465734,-71.26382599999999"
+        patterns : ~
+Malden:
+    Malden Center:
+        type     : Landmark
+        latlon   : "42.426715,-71.07407000000001"
+        patterns : ~
+Mattapan: {}
+Mission Hill:
+    Longwood Ave & Blackfan Cir:
+        type     : Intersection
+        latlon   : "42.3390815,-71.1057846"
+        main     : Longwood
+        cross    : Blackfan
+        patterns :
+            - !ruby/regexp /Longwood Area at Blackfan Street/i
+    Longwood Ave & Avenue Louis Pasteur:
+        type     : Intersection
+        latlon   : "42.336928,-71.103054"
+        main     : Longwood
+        cross    : Louis Pasteur
+        patterns :
+            - !ruby/regexp /Longwood .*? Louis Pasteur/i
+            - !ruby/regexp /\ALongwood Medical Area, on Blackfan St. near Merck\z/i
+    New England Baptists Hospital:
+        type     : Landmark
+        latlon   : "42.329524,-71.106881"
+        patterns :
+            - !ruby/regexp /Baptist Hospital/i
+    Children's Hospital:
+        type     : Landmark
+        latlon   : "42.33767173,-71.1051068"
+        patterns : ~
+Natick:
+    Belkin Family Lookout Farm:
+        type     : Landmark
+        latlon   : "42.263066,-71.309126"
+        patterns :
+            - !ruby/regexp /Lookout Farm/i
+Needham:
+    Needham Center:
+        type     : Landmark
+        latlon   : "42.281331,-71.237541"
+        patterns : ~
+Newton:
+    Route 9 & Elliot St:
+        type     : Intersection
+        latlon   : "42.3187859,-71.2125276"
+        main     : Route 9
+        cross    : Elliot
+        patterns :
+            - !ruby/regexp /Route 9 .*? Woodward\/Elliot/i
+            - !ruby/regexp /Route 9 .*? (Woodward|Elliot)/i
+    Commonwealth Ave & Hammond St:
+        type     : Intersection
+        latlon   : "42.336096,-71.1786085"
+        main     : Commonwealth
+        cross    : Hammond
+        patterns :
+            - !ruby/regexp /Comm\. .*? Hammond/i
+    Upper Falls Spirits:
+        type     : Landmark
+        latlon   : "42.31209951,-71.21215934"
+        patterns : ~
+North End:
+    Greenway Carousel:
+        type     : Landmark
+        latlon   : "42.360557,-71.0527183"
+        patterns :
+            - !ruby/regexp /\ACarousel\z/i
+    Cross St & Hanover St:
+        type     : Intersection
+        latlon   : "42.3625098,-71.055716"
+        main     : Cross
+        cross    : Hanover
+        patterns : ~
+North Andover:
+    Merrimack College:
+        type     : Landmark
+        latlon   : "42.667705,-71.122571"
+        patterns : ~
+Roslindale: {}
+Roxbury:
+    Boston Police Headquarters:
+        type     : Landmark
+        latlon   : "42.3341758,-71.0929667"
+        patterns : ~
+    Dudley Square:
+        type     : Landmark
+        latlon   : "42.329781,-71.084763"
+        patterns : ~
+    Hampden St & Kemble St:
+        type     : Intersection
+        latlon   : "42.3298404,-71.0749273"
+        main     : Hampden
+        cross    : Kemble
+        patterns :
+            - !ruby/regexp /Hampden .*? Kemble/i
+    155 Southampton St:
+        type     : Address
+        number   : 155
+        street   : Southampton
+        latlon   : "42.3309981,-71.06645245"
+        patterns : ~
+Somerville:
+    Aeronaut Brewing Company:
+        type     : Landmark
+        latlon   : "42.381869,-71.10563"
+        patterns :
+            - !ruby/regexp /Aeronaut Brewery/i
+    Assembly Square:
+        type     : Landmark
+        latlon   : "42.37682631,-71.11769692999999"
+        patterns :
+            - !ruby/regexp /Assembly Row - Somerville/i
+    Taza Chocolate:
+        type     : Landmark
+        latlon   : "42.37582537,-71.09399062999999"
+        patterns : ~
+South Boston: {}
+South End:
+    SoWa Open Market:
+        type     : Event
+        latlon   : "42.342531,-71.065299"
+        patterns :
+            - !ruby/regexp /SOWA/
+            - !ruby/regexp /SoWa/
+    Peter's Park:
+        type     : Landmark
+        latlon   : "42.34384,-71.06717"
+        patterns : ~
+    Boston Medical Center:
+        type     : Landmark
+        latlon   : "42.336673,-71.073097"
+        patterns :
+            - !ruby/regexp /BU Medical Center/i
+            - !ruby/regexp /Harrison .*? East Concord/i
+Waltham:
+    411 Waverley Oaks Rd:
+        type     : Address
+        latlon   : "42.386903,-71.2016739"
+        number   : 411
+        street   : Waverley Oaks
+        patterns : ~
+    Constant Contact:
+        type     : Landmark
+        latlon   : "42.41700333,-71.25854551"
+        patterns : ~
+Waterfront:
+    23 Drydock Ave:
+        type     : Address
+        latlon   : "42.3448104,-71.0303901"
+        number   : 23
+        street   : Drydock
+        patterns :
+            - !ruby/regexp /23 Dry Dock Ave/i
+    Innovation & Design Building:
+        type     : Landmark
+        latlon   : "42.344664,-71.0343386"
+        patterns :
+            - !ruby/regexp /Innovation .*? Design/i
+    Seaport Blvd & Thomson Pl:
+        type     : Intersection
+        latlon   : "42.35219,-71.04658999999999"
+        main     : Seaport
+        cross    : Thomson
+        patterns :
+            - !ruby/regexp /Seaport .*? Thompson/i
+            - !ruby/regexp /Seaport .*? Thomson/i
+            - !ruby/regexp /Innovation District/i
+    Marine Industrial Park:
+        type     : Landmark
+        latlon   : "42.344208,-71.037705"
+        patterns :
+            - !ruby/regexp /MarineIndustrial/i
+    Courthouse:
+        type     : Landmark
+        latlon   : "42.35266805,-71.04781814"
+        patterns :
+            - !ruby/regexp /Courthouse Station/i
+Watertown:
+    Commander's Mansion:
+        type     : Landmark
+        latlon   : "42.360476,-71.16316164"
+        patterns :
+            - !ruby/regexp /440 Talcott Ave/i
+            - !ruby/regexp /Commanders Mansion/i
+    Arsenal Mall:
+        type     : Landmark
+        latlon   : "42.3620141,-71.15756118"
+        patterns : ~
+    Athena Health:
+        type     : Landmark
+        latlon   : "42.36237095,-71.16495262"
+        patterns : ~
+West End:
+    Blossom St & Emerson Pl:
+        type     : Intersection
+        latlon   : "42.36444,-71.06863"
+        main     : Blossom
+        cross    : Emerson
+        patterns :
+            - !ruby/regexp /(Mass General|MGH) .*? Blossom/i
+            - !ruby/regexp /Blossom .*? (Mass General|MGH)/i
+    Cambridge St & New Chardon St:
+        type     : Intersection
+        latlon   : "42.3612953,-71.0628689"
+        main     : Cambridge
+        cross    : New Chardon
+        patterns :
+            - !ruby/regexp /Cambridge St.\/New Chardon St/i
+            - !ruby/regexp /New Chardon Street/i
+West Roxbury: {}
+Worcester:
+    Elm Park:
+        type     : Landmark
+        latlon   : "42.26762314,-71.81769022"
+        patterns : ~

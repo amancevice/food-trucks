@@ -1,0 +1,916 @@
+--- # Vancouver Neighborhoods
+Abbotsford:
+    Abbotsford Exhibition Park:
+        type     : Landmark
+        latlon   : "49.06646099,-122.32504888"
+        patterns :
+            - !ruby/regexp /32470 Haida Drive Abbotsford/i
+Arbutus-Ridge:
+    Carnarvon Park:
+        type     : Landmark
+        latlon   : "49.25736755,-123.17059156"
+        patterns : ~
+Burnaby:
+    Burnaby Lake Rowing Pavillion:
+        type     : Landmark
+        latlon   : "49.2451852,-122.92286715"
+        patterns :
+            - !ruby/regexp /Burnaby Lake Rowing pavillion/i
+Chilliwack:
+    Heritage Park:
+        type     : Landmark
+        latlon   : "49.13801631,-121.89400042"
+        patterns : ~
+Cloverdale:
+    Cloverdale Rodeo:
+        type     : Event
+        latlon   : "49.111946,-122.734529"
+        patterns : ~
+Commercial Drive:
+    East 7th Ave & Commercial Dr:
+        type     : Intersection
+        main     : East 7th
+        cross    : Commercial
+        latlon   : "49.26409255,-123.06968029"
+        patterns :
+            - !ruby/regexp /Commercial .*? 7th/i
+            - !ruby/regexp /7th .*? Commercial/i
+            - !ruby/regexp /commercial & e. 7th ave/i
+    Commercial Dr & Grant St:
+        type     : Intersection
+        main     : Commercial
+        cross    : Grant
+        latlon   : "49.2712863,-123.0695676"
+        patterns :
+            - !ruby/regexp /1510 commercial drive/i
+            - !ruby/regexp /Commercial .*? Grant/i
+            - !ruby/regexp /Grant .*? Commercial/i
+    Rio Theatre:
+        type     : Landmark
+        latlon   : "49.2622021,-123.07067401"
+        patterns : ~
+Downtown:
+    Beatty St & Dunsmuir St:
+        type     : Intersection
+        main     : Beatty
+        cross    : Dunsmuir
+        latlon   : "49.2798502,-123.1105849"
+        patterns : ~
+    Burrard St & Canada Way:
+        type     : Intersection
+        main     : Burrard
+        cross    : Canada
+        latlon   : "49.2881421,-123.1154926"
+        patterns :
+            - !ruby/regexp /Burrard .*? Canada Way/i
+            - !ruby/regexp /Canaday Way .*? Burrard/i
+    Burrard St & Dunsmuir St:
+        type     : Intersection
+        main     : Burrard
+        cross    : Dunsmuir
+        latlon   : "49.2855457,-123.1193954"
+        patterns :
+            - !ruby/regexp /Burrard .*? Dunsmuir/i
+            - !ruby/regexp /Dunsmuir .*? Burrard/i
+    Burrard St & Robson St:
+        type     : Intersection
+        main     : Burrard
+        cross    : Robson
+        latlon   : "49.2832949,-123.1228016"
+        patterns :
+            - !ruby/regexp /Burrard .*? Robson/i
+            - !ruby/regexp /Robson .*? Burrard/i
+    Burrard St & Hastings St:
+        type     : Intersection
+        main     : Burrard
+        cross    : Hastings
+        latlon   : "49.2871235,-123.1170166"
+        patterns :
+            - !ruby/regexp /Burrard .*? Hastings/i
+            - !ruby/regexp /Hastings .*? Burrard/i
+    Burrard St & Pender St:
+        type     : Intersection
+        main     : Burrard
+        cross    : Pender
+        latlon   : "49.2865925,-123.117793"
+        patterns :
+            - !ruby/regexp /Burrard .*? Pender/i
+            - !ruby/regexp /Pender .*? Burrard/i
+    Cordova St & Thurlow St:
+        type     : Intersection
+        main     : Cordova
+        cross    : Thurlow
+        latlon   : "49.2883355,-123.1191713"
+        patterns :
+            - !ruby/regexp /Cordova .*? Thurlow/i
+            - !ruby/regexp /Thurlow .*? Cordova/i
+    David Lam Park:
+        type     : Landmark
+        latlon   : "49.272325,-123.124865"
+        patterns : ~
+    Expo Blvd & Abbott St:
+        type     : Intersection
+        main     : Expo
+        cross    : Abbott
+        latlon   : "49.2786163,-123.1076226"
+        patterns :
+            - !ruby/regexp /Expo .*? Abbott?/i
+            - !ruby/regexp /Abbott? .*? Expo/i
+    Granville St & Dunsmuir St:
+        type     : Intersection
+        main     : Granville
+        cross    : Dunsmuir
+        latlon   : "49.28357354,-123.1163047"
+        patterns :
+            - !ruby/regexp /Granville .*? Dunsmuir/i
+            - !ruby/regexp /Dunsmuir .*? Granville/i
+            - !ruby/regexp /Granville St & Dunsmuir St/i
+            - !ruby/regexp /Granville Skytrain/i
+    Granville St & Robson St:
+        type     : Intersection
+        main     : Granville
+        cross    : Robson
+        latlon   : "49.281358,-123.119829"
+        patterns :
+            - !ruby/regexp /Granville .*? Robson/i
+            - !ruby/regexp /Robson .*? Granville/i
+    Hastings St & Abbott St:
+        type     : Intersection
+        main     : Hastings
+        cross    : Abbott
+        latlon   : "49.282058,-123.10710422"
+        patterns :
+            - !ruby/regexp /Gastown Brunch Crawl/i
+    Hamilton St & Georgia St:
+        type     : Intersection
+        main     : Hamilton
+        cross    : Georgia
+        latlon   : "49.2799628,-123.1142285"
+        patterns :
+            - !ruby/regexp /Hamilton .*? Georgia/i
+            - !ruby/regexp /Georgia .*? Hamilton/i
+    Hamilton St & Dunsmuir St:
+        type     : Intersection
+        main     : Hamilton
+        cross    : Dunsmuir
+        latlon   : "49.2810942,-123.1125113"
+        patterns :
+            - !ruby/regexp /600 Hamilton/i
+            - !ruby/regexp /Hamilton .*? Dunsimuir/i
+            - !ruby/regexp /Dunsimuir .*? Hamilton/i
+    Howe St & Dunsmuir St:
+        type     : Intersection
+        main     : Howe
+        cross    : Dunsmuir
+        latlon   : "49.2842709,-123.1173941"
+        patterns :
+            - !ruby/regexp /Howe .*? Dunsimuir/i
+            - !ruby/regexp /Howe .*? Dunsmuir/i
+            - !ruby/regexp /Dunsimuir .*? Howe/i
+    Howe St & Cordova St:
+        type     : Intersection
+        main     : Howe
+        cross    : Cordova
+        latlon   : "49.2866174,-123.1138591"
+        patterns :
+            - !ruby/regexp /Howe .*? Cordova/i
+            - !ruby/regexp /Cordova .*? Howe/i
+    Howe St & Georgia St:
+        type     : Intersection
+        main     : Howe
+        cross    : Georgia
+        latlon   : "49.2831379,-123.1191186"
+        patterns :
+            - !ruby/regexp /Howe .*? Georgia/i
+            - !ruby/regexp /Georgia .*? Howe/i
+    Pacific Blvd & Davie St:
+        type     : Intersection
+        main     : Pacific
+        cross    : Davie
+        latlon   : "49.2740355,-123.1214823"
+        patterns :
+            - !ruby/regexp /Pacific .*? Davie/i
+            - !ruby/regexp /Davie .*? Pacific/i
+    Robson St & Howe St:
+        type     : Intersection
+        main     : Robson
+        cross    : Howe
+        latlon   : "49.2820134,-123.1208172"
+        patterns :
+            - !ruby/regexp /Robson .*? Howe/i
+            - !ruby/regexp /Howe .*? Robson/i
+    Rogers Arena:
+        type     : Landmark
+        latlon   : "49.27854316,-123.10819253"
+    Roundhouse Community Centre:
+        type     : Landmark
+        latlon   : "49.272936,-123.122578"
+        patterns :
+            - !ruby/regexp /Roundhouse Community/i
+    The Media Club:
+        type     : Landmark
+        latlon   : "49.279753,-123.113024"
+        patterns : ~
+    Cordova St & Thurlow St:
+        type     : Intersection
+        main     : Cordova
+        cross    : Thurlow
+        latlon   : "49.2883355,-123.1191713"
+        patterns :
+            - !ruby/regexp /Cordova .*? Thurlow/i
+            - !ruby/regexp /Thurlow .*? Cordova/i
+    Cordova St & Seymour St:
+        type     : Intersection
+        main     : Cordova
+        cross    : Seymour
+        latlon   : "49.2853394,-123.1118689"
+        patterns :
+            - !ruby/regexp /Cordova .*? Seymour/i
+            - !ruby/regexp /Seymour .*? Cordova/i
+    Georgia St & Hornby St:
+        type     : Intersection
+        main     : Georgia
+        cross    : Hornby
+        latlon   : "49.28377,-123.1200913"
+        patterns :
+            - !ruby/regexp /Georgia .*? Hornby/i
+            - !ruby/regexp /Hornby .*? Georgia/i
+    Georgia St & Burrard St:
+        type     : Intersection
+        main     : Georgia
+        cross    : Burrard
+        latlon   : "49.2844243,-123.1210984"
+        patterns :
+            - !ruby/regexp /Georgia .*? Burrard/i
+            - !ruby/regexp /Burrard .*? Georgia/i
+    Georgia St & Granville St:
+        type     : Intersection
+        main     : Georgia
+        cross    : Granville
+        latlon   : "49.2824942,-123.1181228"
+        patterns :
+            - !ruby/regexp /Georgia .*? Granville/i
+            - !ruby/regexp /Granville .*? Georgia/i
+    Georgia St & Seymour St:
+        type     : Intersection
+        main     : Georgia
+        cross    : Seymour
+        latlon   : "49.2818662,-123.11691607"
+        patterns : ~
+    Vancouver Art Gallery:
+        type     : Landmark
+        latlon   : "49.282961,-123.120472"
+        patterns :
+            - !ruby/regexp /Street Food City .*? Art Gallery/i
+            - !ruby/regexp /Street food city .*? Art Gallery/i
+            - !ruby/regexp /Vancouver Art .*? Streetfoodcity/i
+            - !ruby/regexp /VAG/
+            - !ruby/regexp /Street Food City/i
+            - !ruby/regexp /Art Museum Square/i
+            - !ruby/regexp /Dine Out Vancouver/i
+    Long Table Distillery:
+        type     : Landmark
+        latlon   : "49.275776,-123.132397"
+        patterns :
+            - !ruby/regexp /Longtable Distillery/i
+    West Hastings St & Thurlow St:
+        type     : Intersection
+        main     : West Hastings
+        cross    : Thurlow
+        latlon   : "49.28785741,-123.11940256"
+        patterns :
+            - !ruby/regexp /Hastings .*? Thurlow/i
+            - !ruby/regexp /Thurlow .*? Hastings/i
+    Science World:
+        type     : Landmark
+        latlon   : "49.27279971,-123.10210814"
+        patterns : ~
+Dunbar-Southlands:
+    Camosun Park:
+        type     : Landmark
+        latlon   : "49.257189,-123.200312"
+        patterns : ~
+Fairview:
+    Cambie St & East 8th Ave:
+        type     : Intersection
+        main     : Cambie
+        cross    : East 8th
+        latlon   : "49.2641129,-123.1149375"
+        patterns :
+            - !ruby/regexp /Cambie .*? 8th/i
+            - !ruby/regexp /Cambie .*? Eighth/i
+    Olympic Village:
+        type     : Landmark
+        latlon   : "49.2715835,-123.1062431"
+        patterns :
+            - !ruby/regexp /Athlete'?s Village/i
+    West Broadway & Ash St:
+        type     : Intersection
+        main     : West Broadway
+        cross    : Ash
+        latlon   : "49.2632618,-123.1174951"
+        patterns :
+            - !ruby/regexp /Broadway .*? Ash/i
+    West Broadway & Cambie St:
+        type     : Intersection
+        main     : West Broadway
+        cross    : Cambie
+        latlon   : "49.2632359,-123.1150281"
+        patterns :
+            - !ruby/regexp /Broadway .*? Cambie/i
+            - !ruby/regexp /Cambie .*? Broadway/i
+    Granville St & West Broadway:
+        type     : Intersection
+        main     : Granville
+        cross    : West Broadway
+        latlon   : "49.26347553,-123.13867629"
+        patterns :
+            - !ruby/regexp /Granville & W\.? Broadway/i
+    Granville St & West 10th Ave:
+        type     : Intersection
+        main     : Granville
+        cross    : West 10th
+        latlon   : "49.2617187,-123.138627"
+        patterns :
+            - !ruby/regexp /Granville .*? 10th/i
+            - !ruby/regexp /Granville .*? 10 /i
+            - !ruby/regexp /10t?h? .*? Granville/i
+            - !ruby/regexp /Granville & W.10th Ave/i
+    Granville St & West 11th Ave:
+        type     : Intersection
+        main     : Granville
+        cross    : West 11th
+        latlon   : "49.2617187,-123.138627"
+        patterns :
+            - !ruby/regexp /Granville .*? 11th/i
+            - !ruby/regexp /11th .*? Granville/i
+            - !ruby/regexp /Grenville .*? 11th/i
+            - !ruby/regexp /Granville & 11 Th st./i
+    Granville Island:
+        type     : Landmark
+        latlon   : "49.2708321,-123.1337753"
+        patterns :
+            - !ruby/regexp /Grandville Island/i
+    Vanouver General Hospital:
+        type     : Landmark
+        latlon   : "49.262106,-123.122406"
+        patterns :
+            - !ruby/regexp /VGH/i
+            - !ruby/regexp /Cancer Agency/i
+Fort Langley:
+    Cranberry Festival:
+        type     : Landmark
+        latlon   : "49.28305,-123.12435"
+        patterns : ~
+Grandview-Woodland:
+    Parallel49 Brewery:
+        type     : Landmark
+        latlon   : "49.283906,-123.064405"
+        patterns :
+            - !ruby/regexp /49 .*? Brew/i
+            - !ruby/regexp /Brew .*? 49/i
+            - !ruby/regexp /PARALLEL 49/i
+            - !ruby/regexp /Parallel 49 Brewery/i
+            - !ruby/regexp /Parallel 49/i
+    Bomber Brewing:
+        type     : Landmark
+        latlon   : "49.27762581,-123.07442304"
+        patterns :
+            - !ruby/regexp /1488 Adanac/i
+    Odd Society Spirits:
+        type     : Landmark
+        latlon   : "49.28401973,-123.06946435"
+        patterns : ~
+Hastings-Sunrise:
+    East Broadway & Renfrew St:
+        type     : Intersection
+        main     : East Broadway
+        cross    : Renfrew
+        latlon   : "49.2619648,-123.0443071"
+        patterns :
+            - !ruby/regexp /Broadway .*? Renfrew/i
+            - !ruby/regexp /Renfrew .*? Broadway/i
+Kensington-Cedar Cottage:
+    Croatian Cultural Centre:
+        type     : Landmark
+        latlon   : "49.255531,-123.068585"
+        patterns :
+            - !ruby/regexp /KNIT CITY/i
+    John Hendry Park:
+        type     : Landmark
+        latlon   : "49.256144,-123.061522"
+        patterns :
+            - !ruby/regexp /Jhon Hendry Park/i
+    Trout Lake Farmers Market:
+        type     : Event
+        latlon   : "49.25467877,-123.06496235"
+        patterns :
+            - !ruby/regexp /Trout Lake Farmer'?s Market/i
+            - !ruby/regexp /Farmer'?s Market .*? Trout Lake/i
+            - !ruby/regexp /Trout lake Farmers Market/i
+Kerrisdale:
+    West 41st Ave & East Blvd:
+        type     : Intersection
+        main     : West 41st
+        cross    : East
+        latlon   : "49.23460899,-123.15501762"
+        patterns : ~
+    West 41st Ave & Yew St:
+        type     : Intersection
+        main     : West 41st
+        cross    : Yew
+        latlon   : "49.234616,-123.157764"
+        patterns : ~
+    Kerrisdale Arena:
+        type     : Landmark
+        latlon   : "49.23554821,-123.15490573"
+        patterns : ~
+    McCleery Golf Course:
+        type     : Landmark
+        latlon   : "49.223085,-123.1662176"
+        patterns :
+            - !ruby/regexp /7025 Macdonald St/i
+Killarney: {}
+Kitsilano:
+    Burrard & West 1st Ave:
+        type    : Intersection
+        main    : Burrard
+        cross   : West 1st
+        latlon   : "49.27065346,-123.14578049"
+        patterns:
+            - !ruby/regexp /Burrard & 1st/i
+    York Ave & Chestnut St:
+        type     : Intersection
+        main     : York
+        cross    : Chestnut
+        latlon   : "49.27138948,-123.1464438"
+        patterns :
+            - !ruby/regexp /Lululemon HQ/i
+    West 4th Ave & Yew St:
+        type     : Intersection
+        main     : West 4th
+        cross    : Yew
+        latlon   : "49.2681826,-123.1551591"
+        patterns :
+            - !ruby/regexp /W 4th Ave & Yew St/i
+    West 4th Ave & Vine St:
+        type     : Intersection
+        main     : West 4th
+        cross    : Vine
+        latlon   : "49.2682096,-123.1575029"
+        patterns :
+            - !ruby/regexp /W 4th \(Between Yew & Vine\)/i
+    West 4th Ave & Burrard St:
+        type     : Intersection
+        main     : West 4th
+        cross    : Burrard
+        latlon   : "49.26810609,-123.1450635"
+        patterns :
+            - !ruby/regexp /W 4th .*? Burrard/i
+            - !ruby/regexp /Burrard .*? W 4th/i
+    Kits Beach:
+        type     : Landmark
+        latlon   : "49.27256167,-123.15369683"
+        patterns : ~
+    Kitsilano Farmers Market:
+        type     : Event
+        latlon   : "49.26167545,-123.16237408"
+        patterns :
+            - !ruby/regexp /Kitsilano Farmer'?s Market/i
+            - !ruby/regexp /Kits Farmers Market/i
+            - !ruby/regexp /Kitsilano Farmers market/i
+    Cornwall Ave & Cypress St:
+        type     : Intersection
+        main     : Cornwall
+        cross    : Cypress
+        latlon   : "49.2724775,-123.147793"
+        patterns : ~
+    Cornwall Ave & Yew St:
+        type     : Intersection
+        main     : Cornwall
+        cross    : Yew
+        latlon   : "49.27235359,-123.15500213"
+        patterns : ~
+    West Broadway & Arbutus St:
+        type     : Intersection
+        main     : West Broadway
+        cross    : Arbutus
+        latlon   : "49.263783,-123.1529284"
+        patterns : ~
+    West Broadway & Maple St:
+        type     : Intersection
+        main     : West Broadway
+        cross    : Maple
+        latlon   : "49.26362734,-123.15040198"
+        patterns : ~
+    West 4th Ave & Maple St:
+        type     : Intersection
+        main     : West 4th
+        cross    : Maple
+        latlon   : "49.26801443,-123.14958625"
+        patterns :
+            - !ruby/regexp /1968 4th Ave W. Vancouver/i
+            - !ruby/regexp /Patagonia/i
+    Kitsilano Comunity Center:
+        type     : Landmark
+        latlon   : "49.2683435,-123.1681598"
+        patterns : ~
+Langly:
+    Mommies And Munchkins Fair:
+        type     : Landmark
+        latlon   : "49.09155315,-122.65719145"
+        patterns : ~
+    George Preston Recreation Centre:
+        type     : Landmark
+        latlon   : "49.07841812,-122.65113869"
+        patterns : ~
+    Township 7 Vineyards & Winery:
+        type     : Landmark
+        latlon   : "49.031156,-122.636436"
+        patterns : ~
+Maple Ridge:
+    Outpost Liquor Store:
+        type     : Landmark
+        latlon   : "49.219983,-122.55753"
+        patterns : ~
+Marpole: {}
+Mount Pleasant:
+    False Creek Flats:
+        type     : Landmark
+        latlon   : "49.27123766,-123.1138929"
+        patterns : ~
+    33 Acres Brewing Co:
+        type     : Landmark
+        latlon   : "49.263999,-123.105307"
+        patterns :
+            - !ruby/regexp /33 ?Acres/i
+            - !ruby/regexp /15 West 8th Ave/i
+    Brassneck Brewery:
+        type     : Landmark
+        latlon   : "49.26568,-123.100674"
+        patterns : ~
+    Main St & East Broadway:
+        type     : Intersection
+        main     : Main
+        cross    : Broadway
+        latlon   : "49.2629122,-123.1008825"
+        patterns :
+            - !ruby/regexp /Main St .*? Broadway/i
+    Main St & East 13th Ave:
+        type     : Intersection
+        main     : Main
+        cross    : East 13th
+        latlon   : "49.2593357,-123.10090054"
+        patterns : ~
+    Main St & East 14th Ave:
+        type     : Intersection
+        main     : Main
+        cross    : East 14th
+        latlon   : "49.2583988,-123.1011669"
+        patterns :
+            - !ruby/regexp /Main on 14th Avenue/i
+    Manitoba St & West 6th Ave:
+        type     : Intersection
+        main     : Manitoba
+        cross    : West 6th
+        latlon   : "49.26558321,-123.10675202"
+        patterns :
+            - !ruby/regexp /Manitoba St\. & W 6th Ave/i
+    Vancouver Community College:
+        type     : Landmark
+        latlon   : "49.26385821,-123.07985855"
+        patterns :
+            - !ruby/regexp /VCC/i
+            - !ruby/regexp /Community College 1155 E Broadway/i
+    MEC on West Broadway:
+        type     : Landmark
+        latlon   : "49.26291375,-123.10840913"
+        patterns :
+            - !ruby/regexp /Broadway.*?Mec/i
+            - !ruby/regexp /Mec.*?Broadway/i
+            - !ruby/regexp /Broadway.*?MEC/i
+            - !ruby/regexp /MEC.*?Broadway/i
+    West 8th Ave & Yukon St:
+        type     : Intersection
+        main     : West 8th
+        cross    : Yukon
+        latlon   : "49.26399252,-123.11270735"
+        patterns : ~
+    Creekside Community Recreation Centre:
+        type     : Landmark
+        latlon   : "49.2714502,-123.1055344"
+        patterns :
+            - !ruby/regexp /1 Athletes Way/i
+Mount Seymour:
+    Mount Seymour:
+        type     : Landmark
+        latlon   : "49.36715336,-122.94923223"
+        patterns :
+            - !ruby/regexp /Mt Seymour/i
+New Westminster:
+    Steel & Oak Brewing Co:
+        type     : Landmark
+        latlon   : "49.201952,-122.927372"
+        patterns :
+            - !ruby/regexp /Steel & Oak Brewery/i
+North Vancouver:
+    Night Market:
+        type     : Landmark
+        latlon   : "49.30927053,-123.07903201"
+        patterns :
+            - !ruby/regexp /Night market, North Vancouver/i
+            - !ruby/regexp /Night market at Victory Ship Way/i
+    MEC Main Street:
+        type     : Landmark
+        latlon   : "49.158935,-122.9610795"
+        patterns : ~
+    Lions Gate Hospital:
+        type     : Landmark
+        latlon   : "49.320764,-123.068346"
+        patterns :
+            - !ruby/regexp /LIONS GATE HOSPITAL/i
+    Deep Cove Brewers and Distillers:
+        type     : Landmark
+        latlon   : "49.30631945,-123.0114364"
+        patterns :
+            - !ruby/regexp /Deep Cove Brewery/i
+    Lonsdale Skate Park:
+        type     : Landmark
+        latlon   : "49.33127902,-123.07125199"
+        patterns : ~
+    Pier Market:
+        type     : Landmark
+        latlon   : "49.30941827,-123.07678048"
+        patterns :
+            - !ruby/regexp /North Van.*?Pier Market/i
+            - !ruby/regexp /138 Victory Ship Way/i
+    North Shore Green Markets:
+        type     : Landmark
+        latlon   : "49.30949273,-123.07517278"
+        patterns : ~
+    Norseman Park:
+        type     : Landmark
+        latlon   : "49.33078185,-123.07054371"
+        patterns :
+            - !ruby/regexp /Centennial Theatre/i
+            - !ruby/regexp /CityFest/i
+    Ship Yards:
+        type     : Landmark
+        latlon   : "49.30987557,-123.07953358"
+        patterns :
+            - !ruby/regexp /North Van Ship Yards/i
+    Capilano University:
+        type     : Landmark
+        latlon   : "49.34883391,-123.05412348"
+        patterns :
+            - !ruby/regexp /2055 Purcell Way North Vancouver/i
+    John Lawson Park:
+        type     : Landmark
+        latlon   : "49.32698608,-123.16032268"
+        patterns : ~
+Oakridge: {}
+Point Grey:
+    Alma St & Point Grey Rd:
+        type     : Intersection
+        main     : Alma
+        cross    : Point Grey
+        latlon   : "49.272264,-123.185592"
+        patterns : ~
+    Jericho Beach Park:
+        type     : Landmark
+        latlon   : "49.2742544,-123.20354673"
+        patterns : ~
+Port Moody:
+    300 Ioco Road:
+        type     : Address
+        number   : 300
+        street   : Ioco
+        latlon   : "49.2845492,-122.831953"
+        patterns : ~
+Renfrew-Collingwood:
+    Renfrew Station:
+        type     : Landmark
+        latlon   : "49.25890971,-123.04527624"
+        patterns :
+            - !ruby/regexp /Renfrew .*? Hebb/i
+Richmond:
+    Richmond News Offices:
+        type     : Landmark
+        latlon   : "49.17613139,-123.13711396"
+        patterns :
+            - !ruby/regexp /Richmond News/i
+    Westminster Hwy & No 3 Rd:
+        type     : Intersection
+        main     : Westminster
+        cross    : No 3
+        latlon   : "49.17024078,-123.13665194"
+        patterns : ~
+Riley Park:
+    Nat Bailey Stadium:
+        type     : Landmark
+        latlon   : "49.243326,-123.106119"
+        patterns :
+            - !ruby/regexp /Nat Baile?y/i
+            - !ruby/regexp /Baeley/i
+    Queen Elizabeth Park:
+        type     : Landmark
+        latlon   : "49.24513424,-123.11139844"
+        patterns : ~
+    Winter Farmers Market:
+        type     : Event
+        latlon   : "49.24430472,-123.1053565"
+        patterns :
+            - !ruby/regexp /Winter Farmers? Market/i
+            - !ruby/regexp /Vancouver Farmer'?s? Market/i
+Shaughnessy:
+    VanDusen Botanical Garden:
+        type     : Landmark
+        latlon   : "49.23877059,-123.12846987"
+        patterns : ~
+Simon Fraser University:
+    Simon Fraser University:
+        type     : Landmark
+        latlon   : "49.278094,-122.919883"
+        patterns : ~
+South Cambie: {}
+Stanley Park:
+    Second Beach:
+        type     : Landmark
+        latlon   : "49.29530028,-123.15061525"
+        patterns :
+            - !ruby/regexp /Second Beach @ Stanley Park/i
+    Chevron Summer Cinema:
+        type     : Landmark
+        latlon   : "49.29473347,-123.14831951"
+        patterns : ~
+Strathcona:
+    1345 Clark Dr:
+        type     : Address
+        number   : 1345
+        street   : Clark
+        latlon   : "49.27072276,-123.07779887"
+        patterns : ~
+    Strange Fellows Brewing Company:
+        type     : Landmark
+        latlon   : "49.27253,-123.077839"
+        patterns :
+            - !ruby/regexp /Strangefellows Brewery/i
+            - !ruby/regexp /Strange Fellows Brewing/i
+            - !ruby/regexp /Strange Fellows Brewery/i
+    Great Northern Way Campus:
+        type     : Landmark
+        latlon   : "49.267486,-123.090338"
+        patterns : ~
+    Main St & Terminal Ave:
+        type     : Intersection
+        main     : Main
+        cross    : Terminal
+        latlon   : "49.2728704,-123.0999316"
+        patterns : ~
+    Powell Street Craft Brewery:
+        type     : Landmark
+        latlon   : "49.2810799,-123.0714412"
+        patterns :
+            - !ruby/regexp /Powell Street Brewery/i
+    Railtown Cafe:
+        type     : Landmark
+        latlon   : "49.284955,-123.095386"
+        patterns :
+            - !ruby/regexp /Rail ?Town/i
+            - !ruby/regexp /Railway St\./i
+    Railway St & Dunlevy Ave:
+        type     : Intersection
+        main     : Railyway
+        cross    : Dunlevy
+        latlon   : "49.2848757,-123.0952312"
+        patterns : ~
+    Railway St & Jackson Ave:
+        type     : Intersection
+        main     : Railway
+        cross    : Jackson
+        latlon   : "49.2847874,-123.0932692"
+        patterns :
+            - !ruby/regexp /503 Railway St/i
+    Strathcona Park Oval:
+        type     : Landmark
+        latlon   : "49.275669,-123.084729"
+        patterns : ~
+    Terminal Ave & Thornton St:
+        type     : Intersection
+        main     : Terminal
+        cross    : Thornton
+        latlon   : "49.2717774,-123.0933357"
+        patterns : ~
+    Terminal Ave & St George St:
+        type     : Intersection
+        main     : Terminal
+        cross    : St George
+        latlon   : "49.27106856,-123.09080237"
+        patterns :
+            - !ruby/regexp /Terminal.*?Mercedes/i
+            - !ruby/regexp /Mercedes.*?Terminal/i
+            - !ruby/regexp /\ATerminal St\z/i
+    Trillium Park:
+        type     : Landmark
+        latlon   : "49.27458556,-123.09240933"
+        patterns : ~
+    Yolk's Restaurant & Commissay:
+        type     : Landmark
+        latlon   : "49.281105,-123.077367"
+        patterns : ~
+    Imperial Theatre:
+        type     : Landmark
+        latlon   : "49.28180873,-123.09978237"
+        patterns : ~
+    MEC Head Office:
+        type     : Landmark
+        latlon   : "49.266089,-123.082763"
+        patterns : ~
+Sunset: {}
+Surry:
+    Central City Mall:
+        type     : Landmark
+        latlon   : "49.187452,-122.849319"
+        patterns : ~
+    Cloverdale Racetrack:
+        type     : Landmark
+        latlon   : "49.25089386,-123.07119084"
+        patterns : ~
+    Cloverdale Fairgrounds:
+        type     : Landmark
+        latlon   : "49.11444333,-122.73282296"
+        patterns :
+            - !ruby/regexp /Cloverdale Fair Grounds/i
+    Southridge School:
+        type     : Landmark
+        latlon   : "49.049977,-122.77868775"
+        patterns :
+            - !ruby/regexp /South Surrey School Fair/i
+            - !ruby/regexp /Southridge Junior School/i
+    Laronde Elementary School:
+        type     : Landmark
+        latlon   : "49.03616192,-122.85879913"
+        patterns :
+            - !ruby/regexp /1880 Laronde Dr/i
+UBC:
+    East Mall & University Blvd:
+        type     : Intersection
+        main     : East Mall
+        cross    : University
+        latlon   : "49.2656887,-123.2505086"
+        patterns : ~
+    Macinnes Field:
+        type     : Landmark
+        latlon   : "49.26769761,-123.24886795"
+        patterns : ~
+    Buchanan:
+        type     : Landmark
+        latlon   : "49.26270581,-123.2427517"
+        patterns :
+            - !ruby/regexp /UBC Main Mall Buch D/i
+    Thunderbird Stadium:
+        type     : Landmark
+        latlon   : "49.25585041,-123.24520405"
+        patterns : ~
+Victoria-Fraserview: {}
+West End:
+    Alberni St & Bute St:
+        type     : Intersection
+        main     : Alberni
+        cross    : Bute
+        latlon   : "49.2867031,-123.125937"
+        patterns : ~
+    Denman St & Davie St:
+        type     : Intersection
+        main     : Denman
+        cross    : Davie
+        latlon   : "49.28772675,-123.14170055"
+        patterns :
+            - !ruby/regexp /1800 Denman/i
+            - !ruby/regexp /1800 Davie/i
+    Burrard St & Smithe St:
+        type     : Intersection
+        main     : Burrard
+        cross    : Smithe
+        latlon   : "49.2822373,-123.1244002"
+        patterns :
+            - !ruby/regexp /Burrard .*? Smithe/i
+            - !ruby/regexp /Smithe .*? Burrard/i
+    English Bay:
+        type     : Landmark
+        latlon   : "49.28654689,-123.14308257"
+        patterns : ~
+    Beach Ave & Bute St:
+        type     : Intersection
+        main     : Beach
+        cross    : Bute
+        latlon   : "49.27886525,-123.13667251"
+        patterns : ~
+West Point Grey: {}
+Yaletown:
+    Davie St & Marinaside Cr:
+        type     : Intersection
+        main     : Davie
+        cross    : Marinaside
+        latlon   : "49.2732,-123.11958"
+        patterns : ~
