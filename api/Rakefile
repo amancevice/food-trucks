@@ -52,7 +52,7 @@ namespace :places do
   task :unknown do
     headings = %w(City Neighborhood Provider Name LatLng)
     rows     = Place.unknown.map do |x|
-      neighborhood = x.neighborhood && x.neighborhood.name
+      neighborhood = x.neighborhood&.name
       latlng       = x.latitude && x.longitude && "#{x.latitude.to_s[0..10]},#{x.longitude.to_s[0..10]}"
 
       [ x.city.name, neighborhood, x.provider.type, x.name, latlng ]

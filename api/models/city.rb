@@ -42,7 +42,7 @@ class City < ActiveRecord::Base
       gig.meals.map do |meal|
         mongoid      = "#{gig.uuid}-#{meal}"
         meal         = meal.to_s.split(/_/).map(&:capitalize).join(' ')
-        neighborhood = (gig.place.neighborhood && gig.place.neighborhood.name) || 'Other'
+        neighborhood = gig.place.neighborhood&.name || 'Other'
         { mongoid =>
           { mongoid:       mongoid,
             name:          gig.truck.name,
